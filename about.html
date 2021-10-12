@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>About me</title>
+</head>
+<body>
+    <div class="nav-container">
+        <header>
+              
+          <a href="about.html" class="logo">Tanuja Bhatnagar</a>
+          <nav>
+              <ul>
+                  <li>
+                      <a href="index.html">Home</a>
+                  </li>
+                  
+                  <li>
+                      <a href="about.html">About</a>
+                  </li>
+                  
+                  <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li> <a href="https://dribbble.com/TanujaBhatnagar" ><img src="images/dribbble@2x.png" alt ="dribbble"> </a></li>
+                <li> <a href="https://www.linkedin.com/in/tanuja-bhatnagar-6b39b1192" ><img src="images/linkedin-in@2x.png" alt="linkedin"> </a></li>
+                <li> <a href="https://github.com/tanuja14" ><img src="images/github@2x.png" alt="github"> </a></li>
+            </ul>
+        </div>
+      </div>
+    <section class="about">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">About me</p>
+                <a href="#" class="featured-title">Hi, I'm Tanuja</a><div class="based" style="font-size: 0.8em;
+                    text-transform: uppercase; color: #57575786;"> Based in Noida, India</div>
+           <p class="featured-desc">As a teenager, I've always been fixated on beautiful websites so I got my hands dirty with HTML/CSS. I leveraged learning Java as an opportunity to combine my love for UI design and building strongly featured applications. I'm currently working on web development and my passion for building apps pushes me to Android development.</p>  
+        <p class="featured-desc">I am a very active person and I enjoy choosing new pastimes. I love to draw, play ukulele, ride my bicycle and explore new places nearby.</p>
+        </div>
+        </div>
+       <div class="image-container">
+        <img class="right"src="images/IMG_20191013_091323_854.png" alt="Tanuja Bhatnagar">
+        <img src="images/Rectangle14.png" alt="background" class="background transition3">
+       </div>
+        </section>
+        <div class="social-footer">
+            <ul>
+                <li> <a href="https://dribbble.com/TanujaBhatnagar" ><img src="images/dribbble@2x.png" alt ="dribbble"> </a></li>
+                <li> <a href="https://www.linkedin.com/in/tanuja-bhatnagar-6b39b1192" ><img src="images/linkedin-in@2x.png" alt="linkedin"> </a></li>
+                <li> <a href="https://github.com/tanuja14" ><img src="images/github@2x.png" alt="github"> </a></li>
+            </ul>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+
+            gsap.registerPlugin(ScrollTrigger);
+            var t1=gsap.timeline();
+
+            gsap.from(".transition2",{
+            start:"top bottom",
+            y:50,
+            opacity:0,
+            duraction:3,
+            stagger:.4 
+            })
+
+            gsap.from('.transition3',{
+            stagger:.2,
+            scale:0.1,
+            duration:2,
+            ease:Back.easein.config(1.7)
+    },"-=1")
+
+            gsap.from(".before",{
+            start: "left right",    
+            stagger:.3,
+            scale:0.1,
+            duration:1.5,
+            ease:Power3.easeOut,
+            })
+
+        </script>
+</body>
+</html>

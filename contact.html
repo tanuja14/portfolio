@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    
+    <div class="nav-container">
+        <header>
+              
+          <a href="about.html" class="logo">Tanuja Bhatnagar</a>
+          <nav>
+              <ul>
+                  <li>
+                      <a href="index.html">Home</a>
+                  </li>
+                  
+                  <li>
+                      <a href="about.html">About</a>
+                  </li>
+                  
+                  <li>
+                      <a href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li> <a href="https://dribbble.com/TanujaBhatnagar" ><img src="images/dribbble@2x.png" alt ="dribbble"> </a></li>
+                <li> <a href="https://www.linkedin.com/in/tanuja-bhatnagar-6b39b1192" ><img src="images/linkedin-in@2x.png" alt="linkedin"> </a></li>
+                <li> <a href="https://github.com/tanuja14" ><img src="images/github@2x.png" alt="github"> </a></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="contact-hero">
+            <form id="contact-form" action="https://formspree.io/f/mqkwjwva" method="POST">
+            <div class="form-heading">
+                <p>Get in touch with me</p>
+            </div>
+    <div class="input">
+        <label for="name">Name</label> <br>
+        <input class="input-text" id="name" type="text" name="name" placeholder="Type your name" required><br>
+    </div>
+    <div class="input"> 
+        <label for="email" >Email</label><br>
+        <input class="input-text" id="email"type="text" name="email" placeholder="Type your email address" required><br>
+    </div>
+    
+<div class="input">
+    <label for="message" name="message" aria-required="true">Message</label><br>
+
+    <textarea class="input three" rows="4" cols="50" name="message" id="message" placeholder="Type your message"></textarea><br>
+</div> 
+
+<div class="input transition2">
+    <input class="submit"type="submit" name="submit" id="submit">
+</div>
+<p id="contact-form-status"></p>
+            </form>
+            </div>
+       <div class="hero-design">
+        <svg  width="475" height="480" viewBox="0 0 475 480">
+            <g id="Group_3" data-name="Group 3" transform="translate(-1062 -335)">
+              <rect id="Rectangle_5" data-name="Rectangle 5" width="123" height="123" rx="20" transform="translate(1290 335)" fill="#6e00ff"/>
+              <rect id="Rectangle_5" data-name="Rectangle 6" width="123" height="123" rx="20" transform="translate(1175 455)" fill="#fff"/>
+              <rect id="Rectangle_5" data-name="Rectangle 7" width="123" height="123" rx="20" transform="translate(1414 447)" fill="#6e00ff" opacity="0.4"/>
+              <rect id="Rectangle_5" data-name="Rectangle 8" width="123" height="123" rx="20" transform="translate(1062 579)" fill="#fff" opacity="0.4"/>
+              <rect id="Rectangle_5" data-name="Rectangle 9" width="123" height="123" rx="20" transform="translate(1290 573)" fill="#6e00ff"/>
+              <rect id="Rectangle_5" data-name="Rectangle 10" width="123" height="123" rx="20" transform="translate(1175 692)" fill="#fff"/>
+              <circle id="Ellipse_2" data-name="Ellipse 2" cx="54" cy="54" r="54" transform="translate(1298 462)" fill="#fc4e4e"/>
+              <circle id="Ellipse_3" data-name="Ellipse 3" cx="54" cy="54" r="54" transform="translate(1183 582)" fill="#fd0"/>
+            </g>
+          </svg>
+       </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var form = document.getElementById("contact-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("contact-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            status.innerHTML = "Thanks for your message!";
+            form.reset()
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+
+
+
+<script>
+       gsap.registerPlugin(ScrollTrigger);
+       var t1=gsap.timeline();
+      
+       t1.from('.contact-hero',{
+        y:'-30%',
+        opacity:0,
+        duration:2,
+        ease:Power4.easeOut
+    })
+    t1.from('.input',{
+        opacity:0,
+        y:-50,
+        stagger: .3,
+        ease:Power4.easeOut,
+        duration:1.5
+    }, "-=1.5")
+        t1.from('.hero-design',{
+        opacity:0,
+        y:50,
+        ease:Power4.easeOut,
+        duration:1
+    }, "-=2")
+    gsap.from("#Rectangle_5",{
+        stagger:.3,
+        scale:0.1,
+        duration:1.5,
+        ease:Back.easeOut.config(1.7)
+    })
+</script>
+</body>
+</html>

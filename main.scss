@@ -86,7 +86,7 @@ position: absolute;
 width: 200px;
 height: 200px;
 border-radius: 50%;
-background: #FFDD00;
+background: #ff2e2e;
 opacity: 20%;
 top:10;
 left:0;
@@ -132,14 +132,14 @@ animation: circlein 2s ease-out;
 }
 
 .skills{
-    background: #391099;
+    background: #0011ff30;
 
 .skills-container ul li{
     box-shadow: 2px 2px 18px rgba(36, 21, 21, 0.5);
     background: white;
     padding: 2em;
     border-radius: 1em;
-    margin: 1em;
+    margin: 4em 1em 4em 1em;
 
     b{
         color: #3b3b3b;
@@ -181,6 +181,7 @@ animation: circlein 2s ease-out;
 
     .hire-link{
        font-weight: bold;
+       color: #6E00FF;
     }    
 }
 .skilltile {
@@ -192,7 +193,7 @@ animation: circlein 2s ease-out;
 .footer{
     display: flex;
     justify-content: center;
-    background: #6700EE;
+    background: #6e00ff;
     color: white;
     h6{
         margin-bottom: 0;

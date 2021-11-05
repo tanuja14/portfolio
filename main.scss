@@ -21,7 +21,6 @@ img{
 
 .nav-container{
     background: #6700EE;
-    width: 100%;
   
     a{
         color: white;
@@ -241,7 +240,19 @@ section{
     .portfolio-container img{
         margin-left: 2em;
     }
-
+    .featured::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #ff2e2e;
+        opacity: 20%;
+        top:0;
+        left:0;
+        z-index: -1;
+        animation: circlein 2s ease-out;
+        }
 }
 
 

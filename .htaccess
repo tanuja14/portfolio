@@ -1,8 +1,6 @@
-#mod_rewrite  starts here
-RewriteEngine on
+   RewriteEngine On
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+   RewriteRule .* http://localhost/html/%1 [R=301,L]
 
-RewriteCond %{REQUEST_FILENAME}!-d
-
-RewriteCond %{REQUEST_FILENAME}\.html-f
-
-RewriteRule ^(.*)$ $1.html [NC,L]
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+   RewriteRule .* %1.html [L]

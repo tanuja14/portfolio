@@ -203,6 +203,10 @@ section {
     text-align: left;
   }
 
+  .nav-container {
+    width: 100%;
+  }
+
   .featured, .portfolio-container {
     display: grid;
     grid-template-columns: 40% auto;
@@ -236,21 +240,6 @@ section {
 
   .portfolio-container img {
     margin-left: 2em;
-  }
-
-  .featured::before {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #ff2e2e;
-    opacity: 20%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-animation: circlein 2s ease-out;
-            animation: circlein 2s ease-out;
   }
 }
 @media only screen and (min-width: 1090px) {
@@ -290,6 +279,20 @@ section {
   }
   .social-header img {
     width: 20px;
+  }
+  .social-header .featured::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #ff2e2e;
+    opacity: 20%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-animation: circlein 2s ease-out;
+            animation: circlein 2s ease-out;
   }
 
   .hero {

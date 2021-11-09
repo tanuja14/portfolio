@@ -32,9 +32,11 @@ body{
     }
 }
 .image-container{
+    display: flex;
+    justify-content: center;
     .right
     {
-      width: 400px; 
+      width: 15em; 
       position: relative;
       top: 0;
       left: 0;
@@ -181,25 +183,25 @@ body{
         }
         .right
         {
-          width: 420px; 
+          width: 25em;
+          height: 25em;
           position: relative;
-          top: 4rem;
-          left: 10rem;
-          animation: pictures 2s ease-in-out;
+          top: 5rem;
+          left: 5rem;
+          animation: pictures 1.2s ease-in-out;
         }
         .background
         {
           display: unset;  
-          width: 460px;
+          width: 420px;
           position: absolute;
-          top: 6rem;
-          left: 50rem;
-          animation: pictures 1.5s ease-in-out;
+          top: 8rem;
+          left: 60rem;
         }
         @keyframes pictures {
 
             50% {
-                transform: rotate(-5deg);
+                transform: rotate(3deg);
             }
             100% {
                 transform: rotate(0deg);

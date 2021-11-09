@@ -41,8 +41,12 @@ body {
     transform: translate(absolute);
   }
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+}
 .image-container .right {
-  width: 400px;
+  width: 15em;
   position: relative;
   top: 0;
   left: 0;
@@ -176,25 +180,24 @@ body {
     width: 400px;
   }
   .image-container .right {
-    width: 420px;
+    width: 25em;
+    height: 25em;
     position: relative;
-    top: 4rem;
-    left: 10rem;
-    -webkit-animation: pictures 2s ease-in-out;
-            animation: pictures 2s ease-in-out;
+    top: 5rem;
+    left: 5rem;
+    -webkit-animation: pictures 1.2s ease-in-out;
+            animation: pictures 1.2s ease-in-out;
   }
   .image-container .background {
     display: unset;
-    width: 460px;
+    width: 420px;
     position: absolute;
-    top: 6rem;
-    left: 50rem;
-    -webkit-animation: pictures 1.5s ease-in-out;
-            animation: pictures 1.5s ease-in-out;
+    top: 8rem;
+    left: 60rem;
   }
   @-webkit-keyframes pictures {
     50% {
-      transform: rotate(-5deg);
+      transform: rotate(3deg);
     }
     100% {
       transform: rotate(0deg);
@@ -208,7 +211,7 @@ body {
   }
   @keyframes pictures {
     50% {
-      transform: rotate(-5deg);
+      transform: rotate(3deg);
     }
     100% {
       transform: rotate(0deg);

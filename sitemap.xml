@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://tanuja14.github.io/portfolio/</loc>
+
+      <lastmod>2021-11-09</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   
+      <url>
+
+      <loc>https://tanuja14.github.io/portfolio/index.html</loc>
+
+      <lastmod>2021-11-09</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://tanuja14.github.io/portfolio/contact.html</loc>
+
+      <lastmod>2021-10-12</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+      <url>
+
+      <loc>https://tanuja14.github.io/portfolio/about.html</loc>
+
+      <lastmod>2021-10-12</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+</urlset> 

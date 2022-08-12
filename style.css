@@ -159,7 +159,7 @@ body {
   color: #616161;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1090px) {
   .about {
     display: grid;
     grid-template-columns: 40% auto;
@@ -218,7 +218,7 @@ body {
   }
   .form-container .hero-design {
     display: unset;
-    margin-left: -45%;
+    margin-left: -48%;
     margin-top: 5%;
     width: 100%;
   }

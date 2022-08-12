@@ -32,7 +32,6 @@ body {
     transform: translate(absolute);
   }
 }
-
 @keyframes circlein {
   from {
     transform: translate(-20px, 0px);

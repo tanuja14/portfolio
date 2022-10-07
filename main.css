@@ -30,9 +30,13 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2em;
+  align-items: center;
 }
 header .logo {
   font-weight: bold;
+}
+header .logo img{
+  width: 60px;
 }
 header ul {
   display: flex;

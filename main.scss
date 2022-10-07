@@ -28,9 +28,10 @@ img{
 
 .nav-container{
     background: #6700EE;
-  
+
     a{
         color: white;
+
     }
 }
 
@@ -40,6 +41,9 @@ header{
     padding: 2em;
 
     .logo{
+        img{
+            width: 3em;
+          }
         font-weight: bold;   
     }
     ul{
@@ -125,16 +129,17 @@ section{
     }
 
 }
-
 .skills{
-    background: #0011ff30;
-
-.skills-container .TechStack{
-    box-shadow: 2px 2px 18px rgba(36, 21, 21, 0.5);
-    border-radius: 1em;
-    margin: .4em .1em .4em .1em;
-    padding: 2rem; 
-}
+    .skills-container 
+    {
+        .TechStack {
+            .skillset{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+            }
+      }
+    }
 }
 
 
@@ -158,7 +163,6 @@ section{
     }    
 }
 .skilltile {
-    
     padding: 2em 2em 2em 2em;
     margin: 2em 2em 4em 2em;
     
@@ -215,11 +219,6 @@ section{
         margin-top: -5.3em;
         margin-bottom: -7em;
         padding-top: 7em;
-    }
-    .skills-container ul{
-        display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-gap:1em;
     }
 
     .portfolio{

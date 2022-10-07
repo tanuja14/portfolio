@@ -159,7 +159,7 @@ body {
   color: #616161;
 }
 
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 1025px) {
   .about {
     display: grid;
     grid-template-columns: 40% auto;
@@ -222,4 +222,5 @@ body {
     margin-top: 5%;
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

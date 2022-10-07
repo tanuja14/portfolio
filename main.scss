@@ -129,33 +129,11 @@ section{
 .skills{
     background: #0011ff30;
 
-.skills-container ul li{
+.skills-container .TechStack{
     box-shadow: 2px 2px 18px rgba(36, 21, 21, 0.5);
-    background: white;
-    padding: 2em;
     border-radius: 1em;
-    margin: 4em 1em 4em 1em;
-
-    b{
-        color: #3b3b3b;
-    }
-
-    .icon-container{
-        height: 100px;
-        display: grid;
-        place-content: center;
-        margin:0 auto;
-       
-    }
-   .skill-title{
-              font-weight: bold;
-              text-transform: uppercase;
-   }
-   .featured-desc{
-       margin-bottom:  2em;
-
-
-   }
+    margin: .4em .1em .4em .1em;
+    padding: 2rem; 
 }
 }
 

@@ -128,29 +128,25 @@ section {
 .skills {
   background: #0011ff30;
 }
-.skills .skills-container ul li {
-  box-shadow: 2px 2px 18px rgba(36, 21, 21, 0.5);
-  background: white;
-  padding: 2em;
-  border-radius: 1em;
-  margin: 4em 1em 4em 1em;
+.skills .skills-container .TechStack .skillset{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.skills .skills-container ul li b {
-  color: #3b3b3b;
+.skills .skills-container .TechStack{
+  text-align: left;
+  margin-left: 1em;
 }
-.skills .skills-container ul li .icon-container {
-  height: 100px;
-  display: grid;
-  place-content: center;
-  margin: 0 auto;
+.skills .skills-container .TechStack .skill{
+ box-shadow: 2px 2px 8px rgba(23, 19, 19, 0.5);
+  background:rgb(255, 255, 255);
+  padding: 1em;
+  width: max-content;
+  border-radius: .5em;
+  color: #171717;
+  margin: 1em 0em 0em 1em;
 }
-.skills .skills-container ul li .skill-title {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.skills .skills-container ul li .featured-desc {
-  margin-bottom: 2em;
-}
+
 
 .portfolio {
   background: #f7f7f7;
@@ -168,11 +164,6 @@ section {
 .hire-me .hire-link {
   font-weight: bold;
   color: #6E00FF;
-}
-
-.skilltile {
-  padding: 2em 2em 2em 2em;
-  margin: 2em 2em 4em 2em;
 }
 
 .footer {
@@ -230,8 +221,8 @@ section {
 
   .skills-container ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
+    grid-template-columns: repeat(9, auto);
+    grid-gap: .5em;
   }
 
   .portfolio {

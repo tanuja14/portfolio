@@ -75,13 +75,11 @@ body {
 
 .form-container {
   display: grid;
-  background-image: linear-gradient(to bottom right, #2F016C, #7e1cff);
+  background:  #7e1cff;
   padding-bottom: 10em;
   display: flex;
   justify-content: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 900vh;
 }
 .form-container .contact-hero {
   color: white;
@@ -223,4 +221,3 @@ body {
     width: 100%;
   }
 }
-/*# sourceMappingURL=style.css.map */

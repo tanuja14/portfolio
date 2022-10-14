@@ -79,12 +79,10 @@ body {
   padding-bottom: 10em;
   display: flex;
   justify-content: center;
-  height: 900vh;
 }
 .form-container .contact-hero {
   color: white;
   display: flex;
-  align-items: center;
   text-align: left;
   padding: 2em;
   width: -webkit-min-content;

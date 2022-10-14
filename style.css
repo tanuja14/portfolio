@@ -3,6 +3,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", arial;
+  overflow-x:hidden;
+  overflow-y:hidden;
 }
 
 .about {

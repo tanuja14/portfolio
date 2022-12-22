@@ -78,46 +78,25 @@ body {
   background:  #7e1cff;
   padding-bottom: 10em;
   display: flex;
-  justify-content: center;
 }
-.form-container .contact-hero {
+.form-container .contact-info {
+  display: flex;
+  flex-direction: column;
   color: white;
   display: flex;
   text-align: left;
   padding: 2em;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
 }
-.form-container .form-heading {
-  color: #FFDD00;
-  font-weight: bold;
-  font-size: 2em;
+.form-container .schedule,.form-container .downlaod {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 2em 0em
 }
-.form-container .input {
-  margin-bottom: 2em;
+.form-container .schedule button,.form-container .downlaod button{
+  margin-left:2em ;
 }
-.form-container .input .input-text {
-  outline: none;
-  border: none;
-  width: 320px;
-  border-radius: 2px;
-  border-style: none;
-  font-family: "Poppins";
-  height: 30px;
-  padding: 0.5em;
-}
-.form-container .input textarea {
-  margin: unset;
-  outline: none;
-  border: none;
-  width: 320px;
-  border-radius: 2px;
-  border-style: none;
-  font-family: "Poppins";
-  padding: 0.5em;
-}
-.form-container .input .submit {
+.form-container button {
   background: #FC4E4E;
   color: white;
   padding: 1em 2em 1em 2em;
@@ -199,19 +178,25 @@ body {
     grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
-    justify-content: unset;
   }
-  .form-container .contact-hero {
+  .form-container .contact-info {
     background-color: #6E00FF;
-    padding: 6em 0em 0em 0em;
+    padding: 4em 0em 0em 0em;
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    
   }
-  .form-container .contact-hero form {
-    margin-top: -6em;
-    padding: 0em 0em 2em 10em;
+  .form-container .schedule button,.form-container .downlaod button{
+    margin-left:2em ;
   }
+
+  .form-container .schedule ,.form-container .downlaod {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2em 4em;
+    }
   .form-container .hero-design {
     display: unset;
     margin-left: -48%;

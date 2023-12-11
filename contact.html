@@ -103,7 +103,6 @@
 <script>
     gsap.registerPlugin(ScrollTrigger);
     var t1=gsap.timeline();
-    
     t1.from('.contact-hero',{
     y:'-30%',
     opacity:0,
@@ -115,7 +114,7 @@ t1.from('.input',{
     y:-50,
     stagger: .3,
     ease:Power4.easeOut,
-    duration:1.5
+    duration:2
 }, "-=1.5")
     t1.from('.hero-design',{
     opacity:0,
@@ -126,7 +125,7 @@ t1.from('.input',{
 gsap.from("#Rectangle_5",{
     stagger:.3,
     scale:0.1,
-    duration:1.5,
+    duration:1,
     ease:Back.easeOut.config(1.7)
 })
 </script>

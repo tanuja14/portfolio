@@ -167,6 +167,7 @@ padding: 2em 0em
     display: grid;
     grid-template-columns: 40% auto;
     text-align: left;
+      padding:0;
   }
   .about .left {
     margin-left: 6em;
@@ -202,6 +203,7 @@ padding: 2em 0em
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
+      padding:0;
   }
   .form-container .contact-info {
     background-color: #6E00FF;

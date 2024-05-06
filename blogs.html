@@ -31,7 +31,9 @@
               </defs>
               </svg></a>
         <nav>
-            <ul>
+            <div class="openMenu"><i class="fa-solid fa-bars" style="font-size: 2.2em;"></i></div>
+            <ul class="mainMenu">
+               
                 <li>
                     <a href="https://tanuja.dev">Home</a>
                 </li>
@@ -58,7 +60,7 @@
     </div>
   </div>
     <div class="blog-list">
-    <h1>Recently published</h1>
+    <h1>Recent Blogs</h1>
     <div class="hashnode">
        <h2> Hashnode<h2>
     <div class="app"></div>
@@ -68,5 +70,31 @@
 </div> -->
 </div>
     <script type="text/javascript" id="articles" src="app.js"></script>
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
+})
+
+function show(){
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.top = '-100%';
+}
+    </script>
 </body>
 </html>

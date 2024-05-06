@@ -35,7 +35,7 @@ html{
   border: 20px #000000;
 }
 .blog-list{
-  padding:12em 2em;
+  padding:8em 2em;
 }
 .about::before {
   content: "";
@@ -173,7 +173,9 @@ padding: 2em 0em
     margin-left: 6em;
     margin-top: 6em;
   }
-
+.blog-list{
+  padding:10em 2em;
+}
   .social-footer {
     display: none;
   }

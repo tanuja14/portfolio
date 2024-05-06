@@ -167,11 +167,14 @@ padding: 2em 0em
     display: grid;
     grid-template-columns: 40% auto;
     text-align: left;
-      padding:0;
+      padding:0em;
   }
   .about .left {
     margin-left: 6em;
     margin-top: 6em;
+  }
+  .blog-list{
+    padding:0em;
   }
   .social-footer {
     display: none;
@@ -203,7 +206,7 @@ padding: 2em 0em
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
-      padding:0;
+      padding:0em;
   }
   .form-container .contact-info {
     background-color: #6E00FF;

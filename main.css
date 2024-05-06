@@ -311,6 +311,7 @@ section {
 
   .nav-container {
     width: 100%;
+     position:unset; 
   }
 
   .featured, .portfolio-container {

@@ -112,7 +112,7 @@ html{
   color: white;
   display: flex;
   text-align: left;
-  padding: 2em;
+  padding: 1em;
 }
 .form-container .schedule,.form-container .downlaod {
 display: flex;

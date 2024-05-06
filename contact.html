@@ -14,6 +14,8 @@
 <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
 <!-- Calendly link widget end -->
+<script src="https://kit.fontawesome.com/395e58e77d.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -40,24 +42,28 @@
             </defs>
         </svg>
     </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://tanuja.dev">Home</a>
-                </li>
-                
-                <li>
-                    <a href="https://tanuja.dev/about">About</a>
-                </li>
-                
-                <li>
-                    <a href="https://tanuja.dev/contact">Contact</a>
-                </li>
-                <li>
-                    <a href="https://tanuja.dev/blogs">Blogs</a>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+        <div class="openMenu"><i class="fa-solid fa-bars" style="font-size: 2.2em;"></i></div>
+        <ul class="mainMenu">
+           
+            <li>
+                <a href="https://tanuja.dev">Home</a>
+            </li>
+            
+            <li>
+                <a href="https://tanuja.dev/about">About</a>
+            </li>
+            
+            <li>
+                <a href="https://tanuja.dev/contact">Contact</a>
+            </li>
+            <li>
+              <a href="https://tanuja.dev/blogs">Blogs</a>
+          </li>
+          <div class="closeMenu"><i class="fa-solid fa-x" style="font-size: 2.2em;"></i></div>
+        </ul>
+       
+    </nav>
     </header>
     <div class="social-header">
         <ul>
@@ -141,6 +147,50 @@ gsap.from(".transition3",{
             duraction:3,
             stagger:.3 
     })
+</script>
+<script>
+    // Create a MediaQueryList object
+    var x = window.matchMedia("(max-width: 1080px)")
+    // Attach listener function on state changes
+    x.addEventListener("change", function() {
+checkdevice(x);
+});
+function checkdevice(x){
+if(!x.matches)
+{
+const mainMenu = document.querySelector('.mainMenu');
+mainMenu.style.top = '9.5%';
+}
+else{
+const mainMenu = document.querySelector('.mainMenu');
+mainMenu.style.top = '-1000%';
+}
+}
+    const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+item.addEventListener('click',function(){
+    close();
+})
+})
+
+
+function show(){
+const mainMenu = document.querySelector('.mainMenu');
+mainMenu.style.display = 'flex';
+mainMenu.style.top = '0';
+}
+function close(x){
+const mainMenu = document.querySelector('.mainMenu');
+mainMenu.style.top = '-100%';
+}
 </script>
 </body>
 </html>

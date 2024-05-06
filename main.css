@@ -32,13 +32,53 @@ img {
   width: 100%;
 }
 
+
 .nav-container {
   background: #6700EE;
+  position:fixed; 
+  width:100%;
+  z-index: 100;
 }
 .nav-container a {
   color: white;
 }
+nav{
+  color: white;
+  background-color: #7e1cff;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .mainMenu li a{
+  padding: 0em 1.2em;
+}
+nav .openMenu {
+  display: block;
+  position: absolute;
+  right: 2em;
+  align-self: center;
+}
 
+nav .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 3.5em;
+  right: 2em;
+  align-self: center;
+}
+ nav .mainMenu {
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #7e1cff;
+  transition: top 1s ease 0s;
+  display: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -68,7 +108,7 @@ header ul a {
   color: white;
   display: grid;
   text-align: center;
-  padding: 4em;
+  padding: 10em 0em 5em
 }
 
 .meet {
@@ -283,6 +323,30 @@ section {
     place-content: center;
   }
 
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    height: unset;
+    background: none;
+    align-items: center;
+    justify-content: center;
+   padding: 0em 4em;
+   top :unset;
+  }
+
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+  }
   .right {
     margin-left: 2em;
     margin-top: 1em;
@@ -291,6 +355,22 @@ section {
   display: flex;
   flex-direction: row;
   
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
 }
 
   .skills {
@@ -329,13 +409,41 @@ section {
   .nav-container header {
     background: #6700EE;
   }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    height: unset;
+    align-items: center;
+    background: #6700EE;
+   padding: 0em 1em;
+   top :unset;
+   position: unset;
+  }
+
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+  }
+
+  nav .mainMenu li{
+    top : '5%';
+  }
 
   header {
     padding: 2em 2em 2em 4em;
   }
 
   .social-header {
-    padding: 2em 4em 2em 0em;
+    padding: 2em 10em 2em 0em;
   }
 
   section {

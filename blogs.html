@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css"> 
     <title>Blogs</title>
+    <script src="https://kit.fontawesome.com/395e58e77d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="nav-container">
@@ -48,7 +49,9 @@
                 <li>
                   <a href="https://tanuja.dev/blogs">Blogs</a>
               </li>
+              <div class="closeMenu"><i class="fa-solid fa-x" style="font-size: 2.2em;"></i></div>
             </ul>
+           
         </nav>
       </header>
       <div class="social-header">
@@ -71,6 +74,23 @@
 </div>
     <script type="text/javascript" id="articles" src="app.js"></script>
     <script>
+        // Create a MediaQueryList object
+        var x = window.matchMedia("(max-width: 1080px)")
+        // Attach listener function on state changes
+        x.addEventListener("change", function() {
+  checkdevice(x);
+});
+function checkdevice(x){
+  if(!x.matches)
+  {
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.top = '9.5%';
+  }
+  else{
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.top = '-1000%';
+  }
+}
         const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
@@ -86,12 +106,13 @@ menu_items.forEach(item => {
     })
 })
 
+
 function show(){
     const mainMenu = document.querySelector('.mainMenu');
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
 }
-function close(){
+function close(x){
     const mainMenu = document.querySelector('.mainMenu');
     mainMenu.style.top = '-100%';
 }

@@ -400,7 +400,6 @@ nav .mainMenu {
 @media only screen and (min-width: 1090px) {
   .hero {
     height: 70vh;
-    padding:8em 0em;
   }
 
   .nav-container {
@@ -445,16 +444,9 @@ nav .mainMenu {
   }
 
   .social-header {
-    padding: 2em 10em 2em 0em;
+   display:flex;
   }
 
-  section {
-    padding: 4em;
-  }
-
-  .social-header {
-    display: block;
-  }
   .social-header ul {
     display: flex;
     justify-content: space-between;

@@ -103,7 +103,7 @@ html{
 .form-container {
   display: grid;
   background:  #7e1cff;
-  padding-bottom: 10em;
+  padding: 10em 5em 2em 2em;
   display: flex;
 }
 .form-container .contact-info {
@@ -204,7 +204,7 @@ padding: 2em 0em
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
-    padding: 0;
+     padding: 10em 5em 2em 2em;
   }
   .form-container .contact-info {
     background-color: #6E00FF;

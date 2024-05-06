@@ -399,6 +399,7 @@ nav .mainMenu {
 @media only screen and (min-width: 1090px) {
   .hero {
     height: 70vh;
+    padding:8em 0em;
   }
 
   .nav-container {

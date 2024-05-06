@@ -304,7 +304,7 @@ section {
   width: 1em;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1060px) {
   .featured, .portfolio {
     text-align: left;
   }

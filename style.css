@@ -35,7 +35,7 @@ html{
   border: 20px #000000;
 }
 .blog-list{
-  padding: 0em 2em;
+  padding:12em 2em;
 }
 .about::before {
   content: "";

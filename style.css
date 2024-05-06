@@ -166,20 +166,15 @@ padding: 2em 0em
   .about {
     display: grid;
     grid-template-columns: 40% auto;
-    padding: 8em 0em 0em 0em;
     text-align: left;
   }
   .about .left {
     margin-left: 6em;
     margin-top: 6em;
   }
-.blog-list{
-  padding:10em 2em;
-}
   .social-footer {
     display: none;
   }
-
   .image-container img {
     width: 400px;
   }
@@ -207,7 +202,6 @@ padding: 2em 0em
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
-     padding: 8em 0em 0em 0em;
   }
   .form-container .contact-info {
     background-color: #6E00FF;

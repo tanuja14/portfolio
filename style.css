@@ -20,7 +20,7 @@ html{
 
 .about {
   position: relative;
-  padding:10em 2em 4em 0em;
+  padding:7em 2em;
 }
 
 #card h3{
@@ -35,7 +35,7 @@ html{
   border: 20px #000000;
 }
 .blog-list{
-  padding:8em 2em;
+  padding:7em 2em;
 }
 .about::before {
   content: "";
@@ -104,7 +104,7 @@ html{
 .form-container {
   display: grid;
   background:  #7e1cff;
-  padding: 8em 0em 0em 0em;
+  padding:7em 2em;
   display: flex;
 }
 .form-container .contact-info {
